@@ -1,0 +1,99 @@
+
+
+.twy-widget {
+    --hue: 0;
+    --saturation: 0%;
+    display: flex;
+    flex-flow: row nowrap;
+    background: hsl(var(--hue), var(--saturation), 90%);
+    padding: 1em 1.5em;
+    justify-content: space-between;
+    align-items: center;
+}
+.twy-widget .overview, .twy-widget .weekly, .twy-widget .yearly {
+    margin: 0 1em;
+    display: flex;
+    flex-flow: column nowrap;
+}
+.twy-widget .overview {
+    width: 28%;
+}
+.twy-widget .weekly, .twy-widget .yearly {
+    width: 36%;
+}
+.twy-widget .weekly, .twy-widget .yearly {
+    align-items: center;
+}
+.twy-widget .weekly .title, .twy-widget .yearly .title {
+    margin-bottom: 0.5em;
+}
+
+.twy-widget .title {
+    text-transform: uppercase;
+}
+
+.twy-widget .twy {
+    display: flex
+}
+
+.twy-widget .twy .twelve {
+    padding: 0 5px;
+    margin-right: 0.3em;
+    color: white;
+    background-color: hsl(var(--hue), var(--saturation), 50%);
+}
+
+.twy-widget .week-title {
+    font-size: 1.9em;
+    line-height: 1.2em;
+}
+
+.twy-widget .timeline {
+    display: flex;
+    flex-flow: row nowrap;
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+
+.twy-widget .timeline-line {
+    display: block;
+    height: 1px;
+    width: 25%;
+    background: black;
+    margin: 10px 5px;
+}
+
+.twy-widget .scores {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.twy-widget .goal-details {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    font-size: 0.7em;
+    padding-right: 1.3em;
+}
+
+.twy-widget .goal-title {
+    align-self: center;
+}
+
+.twy-widget .goal-numbers {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.twy-widget .score {
+    font-size: 2.2em;
+    line-height: 1em;
+}
+
+.twy-widget .percent {
+    align-self: flex-end;
+    font-size: 1.3em;
+}
