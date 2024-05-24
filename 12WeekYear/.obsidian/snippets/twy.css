@@ -23,12 +23,6 @@
     display: flex;
     flex-flow: column nowrap;
 }
-.twy-widget .overview {
-    width: 28%;
-}
-.twy-widget .weekly, .twy-widget .yearly {
-    width: 36%;
-}
 .twy-widget .weekly, .twy-widget .yearly {
     align-items: center;
 }
