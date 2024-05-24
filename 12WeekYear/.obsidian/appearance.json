@@ -3,5 +3,6 @@
   "cssTheme": "Minimal",
   "enabledCssSnippets": [
     "twy"
-  ]
+  ],
+  "theme": "moonstone"
 }

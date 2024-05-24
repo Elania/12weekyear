@@ -5,11 +5,19 @@
     --saturation: 0%;
     display: flex;
     flex-flow: row nowrap;
-    background: hsl(var(--hue), var(--saturation), 90%);
     padding: 1em 1.5em;
     justify-content: space-between;
     align-items: center;
+    color: var(--text-normal);
 }
+.theme-light .twy-widget {    
+    background: hsl(var(--hue), var(--saturation), 90%);
+}
+
+.theme-dark .twy-widget {    
+    background: hsl(var(--hue), var(--saturation), 20%);
+}
+
 .twy-widget .overview, .twy-widget .weekly, .twy-widget .yearly {
     margin: 0 1em;
     display: flex;
@@ -39,8 +47,15 @@
 .twy-widget .twy .twelve {
     padding: 0 5px;
     margin-right: 0.3em;
-    color: white;
     background-color: hsl(var(--hue), var(--saturation), 50%);
+}
+
+.theme-light .twy-widget .twy .twelve {    
+    color: white;
+}
+
+.theme-dark .twy-widget .twy .twelve {    
+    color: black;
 }
 
 .twy-widget .week-title {
@@ -55,12 +70,9 @@
     text-transform: uppercase;
 }
 
-.twy-widget .timeline-line {
-    display: block;
-    height: 1px;
-    width: 25%;
-    background: black;
-    margin: 10px 5px;
+.twy-widget .timeline-line::after {
+    content: '-';
+    padding: 0 5px;
 }
 
 .twy-widget .scores {
